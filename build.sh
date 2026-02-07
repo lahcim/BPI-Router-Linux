@@ -66,6 +66,13 @@ case $board in
 		DTS=arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4.dts
 		DTSI=arch/arm64/boot/dts/mediatek/mt7988a.dtsi
 		;;
+	"bpi-r4pro")
+		ARCH=arm64
+		CONFIGPATH=arch/$ARCH/configs
+		DEFCONFIG=$CONFIGPATH/mt7988a_bpi-r4pro_defconfig
+		DTS=arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4-pro-8x.dts
+		DTSI=arch/arm64/boot/dts/mediatek/mt7988a.dtsi
+		;;
 	*) #bpir2
 		ARCH=arm
 		CONFIGPATH=arch/$ARCH/configs
