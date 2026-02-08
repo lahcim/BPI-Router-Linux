@@ -1,4 +1,4 @@
-# Kernel 6.12 for BananaPi R2/R64/R2Pro/R3/R4
+# Kernel 6.12 for BananaPi R2/R64/R2Pro/R3/R4/R4Pro-8X
 
 ![CI](https://github.com/frank-w/BPI-Router-Linux/workflows/CI/badge.svg?branch=6.12-main)
 
