@@ -66,10 +66,10 @@ case $board in
 		DTS=arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4.dts
 		DTSI=arch/arm64/boot/dts/mediatek/mt7988a.dtsi
 		;;
-	"bpi-r4pro")
+	"bpi-r4-pro-8x")
 		ARCH=arm64
 		CONFIGPATH=arch/$ARCH/configs
-		DEFCONFIG=$CONFIGPATH/mt7988a_bpi-r4pro_defconfig
+		DEFCONFIG=$CONFIGPATH/mt7988a_bpi-r4-pro-8x_defconfig
 		DTS=arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4-pro-8x.dts
 		DTSI=arch/arm64/boot/dts/mediatek/mt7988a.dtsi
 		;;
@@ -832,6 +832,11 @@ function build {
 					fi
 				;;
 				"bpi-r4")
+					IMAGE=arch/arm64/boot/Image
+					LADDR=40080000
+					ENTRY=40080000
+				;;
+				"bpi-r4-pro-8x")
 					IMAGE=arch/arm64/boot/Image
 					LADDR=40080000
 					ENTRY=40080000
